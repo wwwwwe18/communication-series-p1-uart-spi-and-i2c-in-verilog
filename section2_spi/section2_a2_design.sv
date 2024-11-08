@@ -468,7 +468,7 @@ module daisy_c (
 	wire	sdi, sdo1, sdo2, sclk, cs;
 	
 	spi_m	master	(clk, sdi, newd, din, sdo1, cs, sclk, dout);
-	spi_s1	slave1	(sclk, sdo1, cs, sdo2);
+	spi_s	slave1	(sclk, sdo1, cs, sdo2);
 	spi_s2	slave2	(sclk, sdo2, cs, sdi);
 
 endmodule
